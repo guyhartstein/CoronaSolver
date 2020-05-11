@@ -10,7 +10,7 @@ public class CoronaSolver {
 
   //File reading
   private BufferedReader reader;
-  private File inputFileName = new File("/testInputFile.txt")
+  private File inputFileName = new File("testInputFile.txt")
 
   public String solve(String inputFileName){
     reader = new BufferedReader(new FileReader(inputFileName));
