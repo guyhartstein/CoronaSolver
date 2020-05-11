@@ -1,0 +1,15 @@
+In the time of COVID-19, you are heroically trying to spread masks and information across Los Angeles and New York City.  However, you are also in incredible danger.  Every day that you’re out there, you’re exposing yourself to infected people: on day i, you’d be exposed to Li people if you were in Los Angeles, and Ni people if you were in New York City.  Even worse, if you took an overnight plane flight to go from one city to another, you’d be exposed to even more people, F.  Thankfully, you’re magically given a list of what all these numbers would be ahead of time.
+
+You may start in either city.
+
+Your job is to write a program that will tell you what days you should be in Los Angeles and what days to be in New York City such that you will be exposed to as few infected people as possible.
+You are to write a CoronaSolver class in Java with at least one method in it:
+//Returns a string of Ls and Ns to designate which days to spend //in Los Angeles and New York City such that we will be exposed //to as few infected people as possible.  inputFileName’s file //will be in the following format:
+//The first line will be the total number of days, n.
+// The second line will be the number of people you’re exposed to
+// on a flight, F.
+//Every subsequent line will have two numbers, separated by //spaces:
+// Li Ni
+public String solve(String inputFileName)
+
+It would probably also be a good intermediate idea to first write aua method that would return the total number of infected people you’re exposed to in the optimal situation.
