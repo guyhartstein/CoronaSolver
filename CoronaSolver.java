@@ -13,31 +13,35 @@ public class CoronaSolver {
   private File inputFileName = new File("testInputFile.txt");
 
   public String solve(String inputFileName){
+    //READ THE FILE
     reader = new BufferedReader(new FileReader(inputFileName));
 
     //Instantiate the private instance variables using the FileReader
-
-    totalDays = reader.readLine();
-    flightExposed = reader.readLine();
+    totalDays = Integer.parseInt(reader.readLine());
+    //.readLine() returns String
+    flightExposed = Integer.parseInt(reader.readLine());
     exposedUpdate();
+
+    //RETURN THE OUTPUT
+    return output;
   }
 
   public void exposedUpdate(){
-
       String laString = "";
       String nyString = "";
+      //.read() returns int
+      char c = (char)reader.read();
 
-      char c = reader.read();
       while(c != ' '){
         laString+=c;
-        c.read();
+        reader.read();
       }
       while(c != ' '){
         nyString+=c;
-        c.read();
+        reader.read();
       }
-      la = parseInt(laString);
-      ny = parseInt(nyString);
+      la = Integer.parseInt(laString);
+      ny = Integer.parseInt(nyString);
 
     }
 }
