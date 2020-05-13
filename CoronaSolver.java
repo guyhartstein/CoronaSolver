@@ -40,12 +40,17 @@ public class CoronaSolver {
 
       while(c != ' '){
         laString+=c;
-        reader.read();
+        c = (char)reader.read();
       }
+
+      //SKIP THAT space
+      reader.read();
+
       while(c != ' '){
         nyString+=c;
-        reader.read();
+        c = (char)reader.read();
       }
+
       la = Integer.parseInt(laString);
       System.out.println("LA: " + la);
       ny = Integer.parseInt(nyString);
